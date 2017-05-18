@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.birds img {
+    display: block;
+    float: left;
+    width: 200px;
+    height: auto;
+}
+.birds img:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+#pole {
+    width: 1000px;
+    height: 800px;
+    border: 5px solid grey;
+    position: relative;
+}
+#bug {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: blue;
+    position: absolute;
+    left: 500px;
+    top: 780px;
+    transition: 1s;
+    background: url(img/bug.png) no-repeat;
+    background-size: cover;
+    z-index: 99;
+}
+#trava, #tree1, #tree2 {
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+}
+#trava {
+    width: 100%;
+    z-index: 4;
+}
+#tree2 {
+    height: 100%;
+    z-index: 3;
+}
+#tree2 {
+    height: 100%;
+    left:525px;
+    z-index: 3;
+}
