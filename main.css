@@ -3,11 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+.birds {
+  width: 510px;
+}
 .birds img {
     display: block;
     float: left;
-    width: 200px;
+    width: 150px;
     height: auto;
+    margin: 10px;
 }
 .birds img:after {
     content: '';
@@ -28,10 +32,12 @@
     position: absolute;
     left: 500px;
     top: 780px;
-    transition: 1s;
+    transition: 0.5s;
     background: url(img/bug.png) no-repeat;
     background-size: cover;
     z-index: 99;
+    opacity: 0;
+
 }
 #trava, #tree1, #tree2 {
     position: absolute;
@@ -51,4 +57,17 @@
     height: 100%;
     left:525px;
     z-index: 3;
+}
+#start-game, #stop-game {
+padding: 10px 20px;
+  margin: 30px auto;
+}
+@@media screen and(max-width:450) {
+  .birds {
+    width: 350px;
+  }
+  .birds img {
+      width: 100px;
+      margin: 5px;
+  }
 }
